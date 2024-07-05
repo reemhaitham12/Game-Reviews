@@ -1,0 +1,80 @@
+nav {
+    background-color: #3a497b;
+    justify-content: flex-start;
+    /* border-radius: 15px; */
+    box-shadow: 20px 20px 60px#000000,
+        -20px -20px 60px #000000;
+}
+
+body {
+    background-color: #32383e;
+}
+
+.header {
+    object-fit: cover;
+    max-height: 30vh;
+}
+
+.header img {
+    color: #fff;
+    display: inline;
+    line-height: 24px;
+}
+
+.card-body .title {
+    color: #fff;
+    /* font-family: Nerko One; */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    margin: 0px 0px 8px;
+}
+
+.card-body span {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    padding: 8px;
+    text-align: center;
+}
+
+.card {
+    background-color: #32383e;
+}
+
+.card-text {
+    color: #fff;
+    /* font-family: Comfortaa; */
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.card-footer span {
+    background-color: #32383e;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 10.5px;
+    padding: 3.675px 6.825px;
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: #0000e123;
+}
+
+.img-logo {
+    width: 45px;
+}
+.card-img-top img {
+    border-radius: 5px 5px 0px 0px ;
+    color: #fff;
+    display: inline;
+    line-height: 24px;
+    margin: 15px;
+    border-radius: 5px;
+}
