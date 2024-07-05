@@ -7,7 +7,7 @@ nav {
 }
 
 body {
-    background-color: #32383e;
+    background-color: #272b30;
 }
 
 .header {
@@ -40,9 +40,6 @@ body {
     text-align: center;
 }
 
-.card {
-    background-color: #32383e;
-}
 
 .card-text {
     color: #fff;
@@ -63,18 +60,67 @@ body {
     text-align: center;
 }
 
+.card {
+    background-color: #272b30;
+    width: 100%;
+    max-width: 20rem;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-body h5{
+    font-size: small;
+    font-weight: bold;
+}
+.card-body, .card-footer {
+    padding: 10px;
+}
+
+
+/* ?___________ */
+
+.card .span .bg-gray{
+    background-color: #3a497b;
+    transition: all 0.4s ease-in;
+}
+
+.card:hover .bg-gray{
+    background-color: #0d6efd;
+}
+/* ?_____ */
 .bg-gray {
-    background-color: #0000e123;
+    background-color: #3a497b;
 }
 
 .img-logo {
     width: 45px;
 }
+
 .card-img-top img {
-    border-radius: 5px 5px 0px 0px ;
+    border-radius: 5px 5px 0px 0px;
     color: #fff;
     display: inline;
     line-height: 24px;
-    margin: 15px;
+    margin: 10px;
     border-radius: 5px;
+    filter: grayscale(100%); 
+    transition: all 0.3s ease;
+}
+.card:hover img {
+    filter: none; 
+}
+
+.nav-item .nav-link {
+    font-weight: 600;
+
+}
+
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
 }
