@@ -1,10 +1,11 @@
 
-
+let DataApi=[];
+let loading= document.querySelector(".loading");
+// let SpinnerLoading = document.getElementById("spinnerLoading");
 gameApi("mmorpg");
-
 async function gameApi(Category) {
-    // const api = await fetch(``);
-    // const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
+    loading.classList.remove('d-none');
+    // SpinnerLoading.innerHTML = `<div class="loader"></div>`;
     const options = {
         method: 'GET',
         headers: {
@@ -15,7 +16,9 @@ async function gameApi(Category) {
     const api = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${Category}`,options);
     const responseApi = await api.json();
     console.log(responseApi);
-    Display(responseApi);
+    DataApi=responseApi;
+    Display();
+    loading.classList.add('d-none');
 }
 
 
@@ -24,7 +27,7 @@ async function gameApi(Category) {
 const links = document.querySelectorAll(".links a");
 document.querySelectorAll(".links a").forEach(function (link) {
     link.addEventListener("click", function () {
-        console.log("hi");
+        // console.log("hi");
         //  i want when i click anyone call back delete .active from class
         //document.querySelectorAll(".links a").classList.remove("active");
         document.querySelectorAll(".links a").forEach(function (otherLink) {
@@ -40,7 +43,7 @@ document.querySelectorAll(".links a").forEach(function (link) {
 
 const Row = document.getElementById("Rows");
 
-function Display(DataApi){
+function Display(){
     let CartonaCard =``;
     for (let i=0 ; i< DataApi.length;i++){
         CartonaCard+=`
